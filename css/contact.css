@@ -1,0 +1,74 @@
+#contact {
+  padding: 7rem 4rem;
+  background: var(--secondary);
+}
+
+#contact .contact-grid {
+  max-width: 1000px;
+  margin-inline: auto;
+  background: var(--secondary);
+  border-radius: 28px;
+  box-shadow: 0 8px 48px rgba(0, 0, 0, 0.09);
+  border: var(--primary) solid 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  text-align: center;
+}
+#contact article {
+  padding: 3.2rem 2.8rem;
+}
+#contact article:first-child {
+  border-right: 1.5px solid rgba(212, 160, 23, 0.2);
+}
+
+#contact article span[role="img"] {
+  font-size: 2.6rem;
+  display: block;
+  margin-bottom: 1rem;
+  
+}
+#contact article h3 {
+  margin-bottom: 0.7rem;
+}
+#contact article p {
+  color: black;
+  font-size: 0.93rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #25d366;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.97rem;
+  padding: 0.85rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.28);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.btn-wa:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(37, 211, 102, 0.4);
+}
+
+#contact iframe {
+  width: 100%;
+  height: 195px;
+  border: none;
+  border-radius: 14px;
+  display: block;
+  margin-bottom: 1rem;
+}
+#contact address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}

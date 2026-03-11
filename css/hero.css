@@ -1,0 +1,87 @@
+#hero {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 9rem 2rem 5rem;
+  text-align: center;
+  background: radial-gradient(
+      ellipse 70% 55% at 50% 38%,
+      rgba(212, 160, 23, 0.14),
+      transparent
+    ),
+    linear-gradient(155deg, #fff8ee, #fde8c8);
+  overflow: hidden;
+  position: relative;
+}
+#hero::before,
+#hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+#hero::before {
+  width: 520px;
+  height: 520px;
+  top: -160px;
+  right: -160px;
+  background: rgba(200, 16, 46, 0.09);
+}
+#hero::after {
+  width: 320px;
+  height: 320px;
+  bottom: -100px;
+  left: -80px;
+  background: rgba(212, 160, 23, 0.1);
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--red);
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.95rem 2.7rem;
+  border-radius: 50px;
+  box-shadow: 0 8px 28px rgba(200, 16, 46, 0.33);
+  transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+}
+.btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(200, 16, 46, 0.44);
+  background: var(--primary);
+}
+
+#hero figure {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 48px rgba(200, 16, 46, 0.22),
+    0 0 0 10px rgba(212, 160, 23, 0.13);
+  animation: float 4s ease-in-out infinite;
+}
+
+#hero p {
+  max-width: 520px;
+  font-size: 1.07rem;
+  color: black;
+  line-height: 1.75;
+}
+#hero figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
