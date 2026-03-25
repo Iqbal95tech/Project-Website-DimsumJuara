@@ -26,7 +26,6 @@
   font-size: 2.6rem;
   display: block;
   margin-bottom: 1rem;
-  
 }
 #contact article h3 {
   margin-bottom: 0.7rem;
@@ -49,7 +48,9 @@
   padding: 0.85rem 2rem;
   border-radius: 50px;
   box-shadow: 0 6px 22px rgba(37, 211, 102, 0.28);
-  transition: transform 0.25s, box-shadow 0.25s;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
 }
 .btn-wa:hover {
   transform: translateY(-3px);

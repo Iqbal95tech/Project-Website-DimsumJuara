@@ -1,6 +1,7 @@
 #testimoni {
   padding: 7rem 4rem;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       ellipse 70% 55% at 50% 38%,
       rgba(212, 160, 23, 0.14),
       transparent
@@ -14,7 +15,8 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 20% 50%,
       rgba(212, 160, 23, 0.06),
       transparent 60%
@@ -36,7 +38,9 @@
   border-radius: 12px;
   padding: 2rem 1.6rem;
   text-align: center;
-  transition: background 0.3s, transform 0.3s;
+  transition:
+    background 0.3s,
+    transform 0.3s;
   cursor: pointer;
 }
 #testimoni .testimoni-card:hover {
