@@ -2,8 +2,56 @@
   body > header {
     padding: 0.85rem 1.4rem;
   }
+
+  /* Hamburger Menu Show */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Navbar Mobile */
+  body > header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--primary);
+    backdrop-filter: blur(14px);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    box-shadow: 0 2px 18px rgba(200, 16, 46, 0.07);
+  }
+
+  body > header nav.active {
+    max-height: 300px;
+  }
+
   body > header nav ul {
-    gap: 1.2rem;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 1.4rem;
+  }
+
+  body > header nav ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  body > header nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  body > header nav a {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  body > header nav a::after {
+    display: none;
+  }
+
+  body > header nav a:hover {
+    color: var(--red);
   }
   #hero,
   #product,
@@ -16,7 +64,6 @@
     grid-template-columns: 1fr;
   }
   #contact article:first-child {
-    border-right: none;
     border-bottom: 1.5px solid rgba(212, 160, 23, 0.2);
   }
   footer .footer-grid {
